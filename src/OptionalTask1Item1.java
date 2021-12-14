@@ -1,9 +1,9 @@
 public class OptionalTask1Item1 {
     //Метод возвращает значение наибольшей длины элементов в массиве(берем по модулю, чтобы не учитывать знак)
-    static Integer getMaxLengthOfArrayElements(Integer[] a){
-        int maxLengthOfArrayElements = (String.valueOf(Math.abs(a[0]))).length();
-        for (int i = 0; i < a.length; i++) {
-            int lengthOfNumber = (String.valueOf(Math.abs(a[i]))).length();
+    static Integer getMaxLengthOfArrayElements(Integer[] array){
+        int maxLengthOfArrayElements = (String.valueOf(Math.abs(array[0]))).length();
+        for (int i = 0; i < array.length; i++) {
+            int lengthOfNumber = (String.valueOf(Math.abs(array[i]))).length();
             if (lengthOfNumber > maxLengthOfArrayElements) {
                 maxLengthOfArrayElements = lengthOfNumber;
 
@@ -13,10 +13,10 @@ public class OptionalTask1Item1 {
         return maxLengthOfArrayElements;
     }
     //Метод возвращает значение наименьшей длины элементов в массиве (берем по модулю, чтобы не учитывать знак)
-    static Integer getMinLengthOfArrayElements(Integer[] a){
-        int minLengthOfArrayElements = (String.valueOf(Math.abs(a[0]))).length();
-        for (int i = 0; i < a.length; i++) {
-            int lengthOfNumber = (String.valueOf(Math.abs(a[i]))).length();
+    static Integer getMinLengthOfArrayElements(Integer[] array){
+        int minLengthOfArrayElements = (String.valueOf(Math.abs(array[0]))).length();
+        for (int i = 0; i < array.length; i++) {
+            int lengthOfNumber = (String.valueOf(Math.abs(array[i]))).length();
             if (lengthOfNumber < minLengthOfArrayElements) {
                 minLengthOfArrayElements = lengthOfNumber;
 
